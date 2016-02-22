@@ -1,25 +1,249 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vok-6B-nRY">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Title-->
+        <scene sceneID="ruo-pZ-FIZ">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8aw-AZ-Til" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="9Zw-NN-JxW"/>
+                        <viewControllerLayoutGuide type="bottom" id="W9Z-mr-GNV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="hkq-nI-y3c">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="wallup-30326" translatesAutoresizingMaskIntoConstraints="NO" id="Zgd-Hd-1JT">
+                                <rect key="frame" x="-630" y="0.0" width="1398" height="772"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Family Tree" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEr-yU-mYx">
+                                <rect key="frame" x="347" y="106" width="191" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SkyWalker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpj-37-cyX">
+                                <rect key="frame" x="241" y="61" width="184" height="51"/>
+                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="38"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.049870441953689192" green="0.11816486716270447" blue="0.038415527893886525" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hpj-37-cyX" firstAttribute="centerY" secondItem="hkq-nI-y3c" secondAttribute="centerY" constant="-229.5" id="SYN-4s-0Zs"/>
+                            <constraint firstItem="hpj-37-cyX" firstAttribute="centerX" secondItem="hkq-nI-y3c" secondAttribute="centerX" constant="-7" id="ksZ-0G-r9J"/>
+                            <constraint firstItem="eEr-yU-mYx" firstAttribute="centerX" secondItem="hkq-nI-y3c" secondAttribute="centerX" constant="67.5" id="qBb-m9-J5r"/>
+                            <constraint firstItem="eEr-yU-mYx" firstAttribute="centerY" secondItem="hkq-nI-y3c" secondAttribute="centerY" constant="-190.5" id="vBt-DF-N1i"/>
+                        </constraints>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="dfy-VN-lXd"/>
+                        <barButtonItem title="Gen1" id="AXa-Fu-pyD">
+                            <connections>
+                                <segue destination="cB5-1k-thI" kind="show" id="Bhw-yD-Lm3"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Title" id="rr6-av-X3a"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AAr-pY-ag4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-334" y="-517"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Jbw-5p-gqj">
+            <objects>
+                <navigationController navigationBarHidden="YES" toolbarHidden="NO" id="vok-6B-nRY" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="F6K-Dv-RBj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="itz-rZ-pes">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="8aw-AZ-Til" kind="relationship" relationship="rootViewController" id="hwc-aX-HlG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JP6-Hv-hpL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1007" y="-517"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="o0h-jk-3Wv">
+            <objects>
+                <viewController id="cB5-1k-thI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ymx-X5-5fN"/>
+                        <viewControllerLayoutGuide type="bottom" id="iMR-Rw-o1i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KXb-Va-FlK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="wallup-30326" translatesAutoresizingMaskIntoConstraints="NO" id="rhD-DJ-6nn">
+                                <rect key="frame" x="-630" y="0.0" width="1398" height="772"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Shmi SkyWalker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAi-mP-S8E">
+                                <rect key="frame" x="165" y="20" width="271" height="51"/>
+                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="38"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="ShmiHS-SWE" translatesAutoresizingMaskIntoConstraints="NO" id="YYr-cQ-lwE">
+                                <rect key="frame" x="118" y="79" width="365" height="460"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rhD-DJ-6nn" firstAttribute="centerY" secondItem="KXb-Va-FlK" secondAttribute="centerY" constant="86" id="1dy-Zz-qtI"/>
+                            <constraint firstItem="YYr-cQ-lwE" firstAttribute="centerY" secondItem="KXb-Va-FlK" secondAttribute="centerY" id="1ld-QM-ajr"/>
+                            <constraint firstItem="rhD-DJ-6nn" firstAttribute="centerX" secondItem="KXb-Va-FlK" secondAttribute="centerX" constant="-231" id="OQN-Tv-DiW"/>
+                            <constraint firstItem="tAi-mP-S8E" firstAttribute="centerX" secondItem="KXb-Va-FlK" secondAttribute="centerX" id="fNf-yv-Mtd"/>
+                            <constraint firstItem="tAi-mP-S8E" firstAttribute="centerY" secondItem="KXb-Va-FlK" secondAttribute="centerY" constant="-263.5" id="gpq-Wr-vRs"/>
+                            <constraint firstItem="YYr-cQ-lwE" firstAttribute="centerX" secondItem="KXb-Va-FlK" secondAttribute="centerX" id="sr1-Bx-HOp"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Main" id="ycG-Hb-4Jq">
+                            <connections>
+                                <segue destination="8aw-AZ-Til" kind="show" id="oqL-MX-hDH"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="A6R-H8-yWj"/>
+                        <barButtonItem title="Gen2" id="9tB-gZ-zsJ">
+                            <connections>
+                                <segue destination="XZX-V6-RCb" kind="show" id="xNz-R3-soA"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rbt-8G-T7Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="310" y="-517"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hZz-LF-01S">
+            <objects>
+                <viewController id="XZX-V6-RCb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kxT-LP-Y4R"/>
+                        <viewControllerLayoutGuide type="bottom" id="g5c-4q-f8z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xwA-ao-Aov">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="wallup-30326" translatesAutoresizingMaskIntoConstraints="NO" id="zHb-2u-brs">
+                                <rect key="frame" x="-630" y="0.0" width="1398" height="772"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Anakin-Jedi" translatesAutoresizingMaskIntoConstraints="NO" id="9t5-IJ-yid">
+                                <rect key="frame" x="100" y="100" width="400" height="400"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Anakin SkyWalker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHq-s9-J8E">
+                                <rect key="frame" x="136" y="20" width="300" height="51"/>
+                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="38"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zHb-2u-brs" firstAttribute="centerY" secondItem="xwA-ao-Aov" secondAttribute="centerY" constant="86" id="4wf-4t-ZKZ"/>
+                            <constraint firstItem="9t5-IJ-yid" firstAttribute="centerX" secondItem="xwA-ao-Aov" secondAttribute="centerX" id="EyR-60-dK9"/>
+                            <constraint firstItem="9t5-IJ-yid" firstAttribute="centerY" secondItem="xwA-ao-Aov" secondAttribute="centerY" id="eL6-pf-lRw"/>
+                            <constraint firstItem="zHb-2u-brs" firstAttribute="centerX" secondItem="xwA-ao-Aov" secondAttribute="centerX" constant="-231" id="q5F-lK-jjq"/>
+                            <constraint firstItem="wHq-s9-J8E" firstAttribute="centerY" secondItem="xwA-ao-Aov" secondAttribute="centerY" constant="-254.5" id="qgy-xg-rcu"/>
+                            <constraint firstItem="wHq-s9-J8E" firstAttribute="centerX" secondItem="xwA-ao-Aov" secondAttribute="centerX" constant="-14" id="zSk-yw-6RK"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Gen1" id="BQJ-Zu-STZ">
+                            <connections>
+                                <segue destination="cB5-1k-thI" kind="show" id="TbL-jR-h6h"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="irN-7e-Xru"/>
+                        <barButtonItem title="Gen3" id="fKN-31-A2a">
+                            <connections>
+                                <segue destination="2Zn-o4-oTp" kind="show" id="3PZ-hr-A93"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="06M-EO-f0l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="965" y="-517"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="M3F-am-ULo">
+            <objects>
+                <viewController id="2Zn-o4-oTp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nnd-xd-kmg"/>
+                        <viewControllerLayoutGuide type="bottom" id="C8G-JA-T07"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hj0-nj-USP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="wallup-30326" translatesAutoresizingMaskIntoConstraints="NO" id="f21-5X-5d8">
+                                <rect key="frame" x="-630" y="0.0" width="1398" height="772"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="avatar_2f30dc469058_128" translatesAutoresizingMaskIntoConstraints="NO" id="LI7-ci-ssO">
+                                <rect key="frame" x="331" y="202" width="195" height="195"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Luke and Leia SkyWalker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYb-Pb-m0O">
+                                <rect key="frame" x="96" y="28" width="409" height="51"/>
+                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="38"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="Luke-Skywalker-02-icon" translatesAutoresizingMaskIntoConstraints="NO" id="clA-Df-yx7">
+                                <rect key="frame" x="81" y="179" width="242" height="242"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="clA-Df-yx7" firstAttribute="centerX" secondItem="hj0-nj-USP" secondAttribute="centerX" constant="-98" id="18h-6H-AxZ"/>
+                            <constraint firstItem="dYb-Pb-m0O" firstAttribute="centerY" secondItem="hj0-nj-USP" secondAttribute="centerY" constant="-246.5" id="6c1-hP-4aZ"/>
+                            <constraint firstItem="LI7-ci-ssO" firstAttribute="centerY" secondItem="hj0-nj-USP" secondAttribute="centerY" id="ELY-85-GMa"/>
+                            <constraint firstItem="LI7-ci-ssO" firstAttribute="centerX" secondItem="hj0-nj-USP" secondAttribute="centerX" constant="154.5" id="IJx-WP-9nl"/>
+                            <constraint firstItem="f21-5X-5d8" firstAttribute="centerY" secondItem="hj0-nj-USP" secondAttribute="centerY" constant="86" id="ViV-t0-Zea"/>
+                            <constraint firstItem="clA-Df-yx7" firstAttribute="centerY" secondItem="hj0-nj-USP" secondAttribute="centerY" id="jLM-H6-s87"/>
+                            <constraint firstItem="dYb-Pb-m0O" firstAttribute="centerX" secondItem="hj0-nj-USP" secondAttribute="centerX" id="pPp-qO-Kgw"/>
+                            <constraint firstItem="f21-5X-5d8" firstAttribute="centerX" secondItem="hj0-nj-USP" secondAttribute="centerX" constant="-231" id="tkm-fu-6dC"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Gen2" id="wNe-rB-TbD">
+                            <connections>
+                                <segue destination="XZX-V6-RCb" kind="show" id="p9K-8V-z6M"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RhM-qI-pqt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1631" y="-517"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Anakin-Jedi" width="400" height="400"/>
+        <image name="Luke-Skywalker-02-icon" width="256" height="256"/>
+        <image name="ShmiHS-SWE" width="360" height="480"/>
+        <image name="avatar_2f30dc469058_128" width="128" height="128"/>
+        <image name="wallup-30326" width="2046" height="1300"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="oqL-MX-hDH"/>
+        <segue reference="TbL-jR-h6h"/>
+        <segue reference="p9K-8V-z6M"/>
+    </inferredMetricsTieBreakers>
 </document>
